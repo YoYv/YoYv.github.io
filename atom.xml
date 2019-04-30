@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sakuze&#39;s blog</title>
+  
+  <subtitle>Sakura の kaze</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://kaze.xyz/"/>
+  <updated>2019-04-21T04:43:34.962Z</updated>
+  <id>https://kaze.xyz/</id>
+  
+  <author>
+    <name>Alan Wan</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://kaze.xyz/p/16107/"/>
+    <id>https://kaze.xyz/p/16107/</id>
+    <published>2019-04-14T14:31:42.337Z</published>
+    <updated>2019-04-21T04:43:34.962Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎使用 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! 这是你的第一篇文章 点击 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">文档</a> 以查看更多信息.如果你在使用hexo的过程中遇到棘手的问题, 你可以在 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">问题解答</a> 页面搜索查找你的问题或者你可以在 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>向我们提出问题.</p><h2 id="快速开始">快速开始<a href="post/hello-world#快速开始"></a></h2><h3 id="创建一篇新的文章">创建一篇新的文章<a href="post/hello-world#创建一篇新的文章"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>查看更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">写作</a></p><h3 id="运行服务器">运行服务器<a href="post/hello-world#运行服务器"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>查看更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">服务器</a></p><h3 id="生成静态文件">生成静态文件<a href="post/hello-world#生成静态文件"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>查看更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">生成</a></p><h3 id="部署到远程站点">部署到远程站点<a href="post/hello-world#部署到远程站点"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>查看更多信息: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">部署</a></p><hr><blockquote><p>由<strong>Alan Wan</strong>翻译</p><p>Jan 01, 2019</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;欢迎使用 &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! 这是你的第一篇文章 点击 &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用hexo生成静态网页并由github托管</title>
+    <link href="https://kaze.xyz/p/13284/"/>
+    <id>https://kaze.xyz/p/13284/</id>
+    <published>2019-02-01T03:11:18.000Z</published>
+    <updated>2019-04-27T14:06:02.806Z</updated>
+    
+    <content type="html"><![CDATA[<p>.</p><a id="more"></a><h2 id="环境">环境<a href="post/搭建hexo博客-一-基本配置#环境"></a></h2><p>(1) 安装Git<br>下载地址：&lt;https//git-scm.com/downloads&gt;</p><p>(2) 安装NodeJS</p><p>下载地址：<a href="http://nodejs.org/download/" target="_blank" rel="noopener">http://nodejs.org/download/</a><br>一路next即可</p><h2 id="配置git">配置git<a href="post/搭建hexo博客-一-基本配置#配置git"></a></h2><h4 id="设置你的Git-name">设置你的Git name<a href="post/搭建hexo博客-一-基本配置#设置你的Git-name"></a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"usename"</span></span><br><span class="line">git config --global user.email <span class="string">"email"</span></span><br></pre></td></tr></table></figure><h4 id="生成SSH秘钥">生成SSH秘钥<a href="post/搭建hexo博客-一-基本配置#生成SSH秘钥"></a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"you email"</span></span><br></pre></td></tr></table></figure><p>连续N个<kbd>Enter</kbd>(如果你不需要密码)</p><p>可以得到两个文件:<code>id_rsa</code>和<code>id_rsa.pub</code></p><h2 id="配置GitHub">配置GitHub<a href="post/搭建hexo博客-一-基本配置#配置GitHub"></a></h2><h3 id="注册github">注册github<a href="post/搭建hexo博客-一-基本配置#注册github"></a></h3><p>地址: <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a><br>按照提示注册就可以,邮箱一定要真实(要验证邮箱),否则无法创建存储库</p><h3 id="创建github存储库">创建github存储库<a href="post/搭建hexo博客-一-基本配置#创建github存储库"></a></h3><p>仓库的名字要和你的账号对应，如name.github.io<br>然后选择Create repository</p><h3 id="把id-rsa-pub内容复制-添加到GitHub">把<code>id_rsa.pub</code>内容复制,添加到GitHub<a href="post/搭建hexo博客-一-基本配置#把id-rsa-pub内容复制-添加到GitHub"></a></h3><div class="article-img"><p><img src="https://i.loli.net/2019/02/01/5c53ac546c0af.png" alt data-zoomable></p></div><h4 id="验证SSH是否生效">验证SSH是否生效<a href="post/搭建hexo博客-一-基本配置#验证SSH是否生效"></a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>看到<code>Hi</code>后面是你的用户名，就说明成功了。</p><h2 id="使用npm安装hexo">使用<code>npm</code>安装hexo<a href="post/搭建hexo博客-一-基本配置#使用npm安装hexo"></a></h2><blockquote><p>现在假定你已经配置好了本地环境</p></blockquote><p>(1) 更改npm源为淘宝源以提高速度</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry http://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure><p>(2) Install Hexo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><p>cd到一个合适的目录,初始化hexo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure><p><code>cd</code> 到hexo 根目录,执行<code>hexo g &amp;&amp; hexo s</code></p><p>打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>(默认),你就可以看到你的博客的样子了</p><p>你可以使用<kbd>Ctrl+C</kbd>来结束hexo sever</p><blockquote><p>参考链接<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a></p></blockquote><h3 id="Depoy">Depoy<a href="post/搭建hexo博客-一-基本配置#Depoy"></a></h3><p>(1) 修改的<code>\_config.yml</code>文件</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">- type:</span> <span class="string">git</span>    <span class="comment">#不需要更改</span></span><br><span class="line"><span class="attr">  repo:</span>     <span class="comment">#存储库地址</span></span><br></pre></td></tr></table></figure><p>(2) 使用<code>hexo depoy</code>部署到GitHub</p><p>先在hexo根目录执行,以安装git部署服务</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>然后执行<code>hexo d</code>推送成功后就可以 让你的站点被其他人访问了</p><p>地址是:youusename.github.io</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="https://kaze.xyz/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="hexo" scheme="https://kaze.xyz/tags/hexo/"/>
+    
+      <category term="教程" scheme="https://kaze.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+</feed>
