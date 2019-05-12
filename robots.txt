@@ -1,0 +1,16 @@
+User-agent: *
+
+Allow: /about/
+Allow: /archives/
+Allow: /categories/
+Allow: /posts/
+Allow: /tags/
+
+Disallow: /404/
+Disallow: /api/
+Disallow: /imgs/
+Disallow: .js$
+Disallow: .css$
+Disallow: .jpg$
+
+sitemap: https://kaze.xyz/sitemap.xml
